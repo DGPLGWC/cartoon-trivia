@@ -83,6 +83,10 @@ body {
     min-height: 200px;
 }
 
+links {
+    color: white
+}
+
 header {
     display: block;
     margin: 4px;

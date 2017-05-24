@@ -16,27 +16,27 @@
     
     <div id="question">
         <div class="flex-item">
-            <img src="http://img.timeinc.net/time/daily/2008/0811/360_mickey_mouse_1117.jpg" height="245" width="360" style="padding-right:100px;">
+            <img src="http://vignette1.wikia.nocookie.net/frozen/images/5/55/Arendelle.png/revision/latest?cb=20141002010652" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
-           <p>What color is the sky during the day?</p>
+          <p>In the movie Frozen, what country did the city of Arendelle take place</p>
         </div>
         
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = {{ url_for(questions, answer="blue", question_id=2) }}>Blue</a>
+        <div class="flex-item links" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
+            <a href = "{{ url_for('questions', answer='Scottland', question_id=2) }}">Scottland</a>
         </div>
         <div class="flex-item" id="green" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <p>Green</p>
+            <a href = "{{ url_for('questions', answer='Norway', question_id=2) }}">Norway</a>
         </div>
         <div class="flex-item" id="yellow" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <p>Yellow</p>
+            <a href = "{{ url_for('questions', answer='Sweden', question_id=2) }}">Sweden</a>
         </div>
         <div class="flex-item" id="white" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <p>White</p>
+            <a href = "{{ url_for('questions', answer='Canada', question_id=2) }}"}>Canada</a>
         </div>
     </div>
     
