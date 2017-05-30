@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Cartoon Trivia - Question Two">
+    <meta http-equiv="refresh" content="5;url={{ url_for('question', question_id=next ) }}"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
 </head>
@@ -27,7 +28,7 @@
 
     <div class="flex-container">
         <div class="flex-item links" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='Scottland', question_id=2) }}">Scottland</a>
+            <a href = "{{ url_for('questions', answer='Scotland', question_id=2) }}">Scottland</a>
         </div>
         <div class="flex-item" id="green" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
             <a href = "{{ url_for('questions', answer='Norway', question_id=2) }}">Norway</a>

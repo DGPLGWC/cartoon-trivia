@@ -35,7 +35,7 @@ def questions( answer, question_id ):
         score = 0
         if question_id == 1:
             question_id += 1
-            if answer == "15th":
+            if answer == "Steamboat Willy":
                 score += 1
                 return render_template(
                     'success.html',
@@ -44,11 +44,11 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="15th Amendment",
+                    correctAnswer="Streamboat Willy",
                     next=question_id)
         elif question_id == 2:
             question_id += 1
-            if answer == "YOUR ANSWER HERE":
+            if answer == "Norway":
                 score += 1
                 return render_template(
                     'success.html',
@@ -57,11 +57,11 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="Norway",
                     next=question_id)
         elif question_id == 3:
             question_id += 1
-            if answer == "YOUR ANSWER HERE":
+            if answer == "Bambi":
                 score += 1
                 return render_template(
                     'success.html',
@@ -70,11 +70,11 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="Bambi",
                     next=question_id)
         elif question_id == 4:
             question_id += 1
-            if answer == "YOUR ANSWER HERE":
+            if answer == "A fork":
                 score += 1
                 return render_template(
                     'success.html',
@@ -83,10 +83,10 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="A fork",
                     next=question_id)
         elif question_id == 5:
-            if answer == "YOUR ANSWER HERE":
+            if answer == "May 5th, 2006":
                 score += 1
                 return render_template(
                     'success.html',
@@ -95,11 +95,9 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="YOUR CORRECT ANSWERE HERE",
+                    correctAnswer="May 5th, 2006",
                     finished=True)
 
-        #TODO
-        # Add 3more for each question id and fix your template accordingly
     except ValueError:
         print 'Oops thats an error should be caught'
 

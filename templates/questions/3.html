@@ -13,30 +13,29 @@
 <body>
 
     <header>Cartoon Trivia</header>
-    
     <div id="question">
         <div class="flex-item">
-            <img src="http://img.timeinc.net/time/daily/2008/0811/360_mickey_mouse_1117.jpg" height="245" width="360" style="padding-right:100px;">
+            <img src="https://media.giphy.com/media/fiJRJ6BlNrKuI/giphy.gif" height="245" width="360" style="padding-right:100px;">
         </div>
 
         <div class="flex-item" >
-           <p>Question 3 Goes HERE</p>
+           <p>What was the first full length animated Disney movie to not have anny humans appear?</p>
         </div>
         
     </div>
 
     <div class="flex-container">
         <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <p>Multiple Choice Answer 1</p>
+            <a href = "{{ url_for('questions', answer='Cars', question_id=2) }}">Cars</a>
         </div>
         <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <p>Multiple Choice Answer 2</p>
+            <a href = "{{ url_for('questions', answer='Fantasia', question_id=2) }}">Fantasia</a>
         </div>
         <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <p>Multiple Choice Answer 3</p>
+            <a href = "{{ url_for('questions', answer='Bambi', question_id=2) }}">Bambi</a>
         </div>
         <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <p>Multiple Choice Answer 4</p>
+            <a href = "{{ url_for('questions', answer='Dumbo', question_id=2) }}">Dumbo</a>
         </div>
     </div>
     
