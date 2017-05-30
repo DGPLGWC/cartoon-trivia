@@ -35,7 +35,7 @@ def questions( answer, question_id ):
         score = 0
         if question_id == 1:
             question_id += 1
-            if answer == "Steamboat Willy":
+            if answer == "Streamboat Willy":
                 score += 1
                 return render_template(
                     'success.html',
