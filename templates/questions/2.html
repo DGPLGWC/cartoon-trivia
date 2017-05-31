@@ -27,18 +27,26 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item links" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='Scotland', question_id=2) }}">Scottland</a>
-        </div>
-        <div class="flex-item" id="green" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='Norway', question_id=2) }}">Norway</a>
-        </div>
-        <div class="flex-item" id="yellow" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='Sweden', question_id=2) }}">Sweden</a>
-        </div>
-        <div class="flex-item" id="white" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='Canada', question_id=2) }}"}>Canada</a>
-        </div>
+        <a href = "{{ url_for('questions', answer='Scotland', question_id=2) }}">
+            <div class="flex-item links" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
+                <br>Scottland
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Norway', question_id=2) }}">
+            <div class="flex-item" id="green" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>Norway
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Sweden', question_id=2) }}">
+            <div class="flex-item" id="yellow" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>Sweden
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Canada', question_id=2) }}">
+            <div class="flex-item" id="white" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>Canada
+            </div>
+        </a>
     </div>
     
     <footer>

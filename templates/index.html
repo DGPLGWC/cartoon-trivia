@@ -12,20 +12,17 @@
 </head>
 
 <body>
-    <header>Cartoon Trivia</header>
-    <div class="flex-container">
-        <div class="flex-item">
-            <img src="../static/image/cartoontrivia.png" style="padding-right:100px;">
+    <div class="flex-home-container">
+        <header>Cartoon Trivia</header>
+        <div>
+            <img src="../static/image/cartoontrivia.png">
         </div>
-
-        <div class="flex-item">
+        <div>
            <form action="{{ url_for('question', question_id=1) }}" >
                 <input class="start" type="submit" value="Start"/>
             </form>
         </div>
-        
     </div>
-
     <footer>
         <p>&copy; Cartoon Trivia GWC 2017</p>
     </footer>

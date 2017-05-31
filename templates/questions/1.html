@@ -27,18 +27,27 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='Streamboat Willy', question_id=1) }}">Streamboat Willy</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='Steemboat Wolly', question_id=1) }}">Steemboat Wolly</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='Streemboat Wally', question_id=1) }}">Streemboat Wally</a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='Streem about Willy', question_id=1) }}">Streem about Willy</a>
-        </div>
+        
+        <a href = "{{ url_for('questions', answer='Streamboat Willy', question_id=1) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">   
+                <br>Streamboat Willy     
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Steemboat Wolly', question_id=1) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>Steemboat Wolly
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Streemboat Wally', question_id=1) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>Streemboat Wally
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='Streem about Willy', question_id=1) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>Streem about Willy
+            </div>
+        </a>
     </div>
     
     <footer>

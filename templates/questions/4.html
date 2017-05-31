@@ -27,20 +27,27 @@
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <a href = "{{ url_for('questions', answer='A fork', question_id=4) }}">A fork</a>
-        </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <a href = "{{ url_for('questions', answer='A hair brush', question_id=4) }}">A hair brush</a>
-        </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <a href = "{{ url_for('questions', answer='A spoon', question_id=4) }}">A spoon</a>
-        </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <a href = "{{ url_for('questions', answer='A knife', question_id=4) }}">A knife</a>
-        </div>
-    </div>
-    
+        <a href = "{{ url_for('questions', answer='A fork', question_id=4) }}">
+            <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
+                <br>A Fork
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='A hair brush', question_id=4) }}">
+            <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+                <br>A hair brush
+            </div>
+        </a>
+         <a href = "{{ url_for('questions', answer='A spoon', question_id=4) }}">
+            <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+                <br>A spoon
+            </div>
+        </a>
+        <a href = "{{ url_for('questions', answer='A knife', question_id=4) }}">
+            <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+                <br>A knife
+            </div>
+        </a>
+    </div>    
     <footer>
         <p>&copy; Cartoon Trivia GWC 2017</p>
     </footer>
