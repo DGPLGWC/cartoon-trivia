@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Cartoon Trivia - Success">
-    <meta http-equiv="refresh" content="5;url={{ url_for('question', question_id=next ) }}"/>
+    {% if not finished %}
+      <meta http-equiv="refresh" content="3;url={{ url_for('question', question_id=next)}}"/>
+    {% else %}
+      <meta http-equiv="refresh" content="3;url={{ url_for('about')}}"/>
+    {% endif %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>

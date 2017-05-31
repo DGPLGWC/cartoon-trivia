@@ -10,9 +10,8 @@ def index():
 
 @app.route('/question/<int:question_id>')
 def question(question_id):
-
     return render_template(
-        'questions/'+str(question_id)+'.html')
+        'questions/%s.html' % str(question_id))
 
 @app.route('/error')
 def error():
@@ -24,7 +23,7 @@ def success():
     return render_template(
         'success.html')
 
-@app.route('/about/<int:score>')
+@app.route('/about')
 def about():
     return render_template(
         'about.html')
