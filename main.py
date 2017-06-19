@@ -43,7 +43,7 @@ def questions( answer, question_id ):
             else:
                 return render_template(
                     'error.html',
-                    correctAnswer="Streamboat Willy",
+                    correctAnswer="Steamboat Willy",
                     next=question_id)
         elif question_id == 2:
             question_id += 1
